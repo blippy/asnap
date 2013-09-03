@@ -84,13 +84,17 @@ def mousepos(screenroot, indent):
 #root.mainloop()
 
 
-screen = Xlib.display.Display().screen()
-root   = screen.root
-rw = screen.width_in_pixels
-rh = screen.height_in_pixels
-indent = Indent(rw, rh)
-indent.bottom_indent = 50
-#abort(0)
-while True:
-    mousepos(root, indent)
-    time.sleep(0.1)
+def main():
+    screen = Xlib.display.Display().screen()
+    root   = screen.root
+    rw = screen.width_in_pixels
+    rh = screen.height_in_pixels
+    indent = Indent(rw, rh)
+    indent.bottom_indent = 50
+    #abort(0)
+    while True:
+        mousepos(root, indent)
+        time.sleep(0.1)
+
+if __name__ == "__main__":
+    main()
