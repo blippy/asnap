@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python2
 
 # apt-get install python-xlib
 import ewmh # http://sourceforge.net/projects/pyewmh
