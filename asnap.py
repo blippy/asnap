@@ -56,7 +56,7 @@ def mousepos(screenroot, indent):
         y = indent.top_indent
         midx = (indent.left_indent + indent.w - indent.right_indent)/2
         w = midx - indent.gap_indent - indent.left_indent
-        h = rh -indent.top_indent- indent.bottom_indent
+        h = indent.h -indent.top_indent- indent.bottom_indent
         if right: # aersosnap right
             x = midx + indent.gap_indent
 
